@@ -1,0 +1,30 @@
+import Cabecalho from "./Cabecalho"
+import MenuLateral from "./MenuLateral"
+import Conteudo from "./Conteudo"
+import useAppData from "@/data/hook/useAppData";
+import ForcarAutenticacao from "../auth/ForcarAutenticacao";
+
+interface LayoutProps {
+    titulo: string
+    children?: any
+    icone: any
+}
+
+export default function Layout(props: LayoutProps) {
+    const { tema } = useAppData()
+    return (
+        <ForcarAutenticacao>
+            <div className={` ${tema}
+            flex h-screen w-screen
+        `}>
+                <MenuLateral />
+                <div className={`flex flex-col w-full bg-gray-300 dark:bg-gray-600`}>
+                    <Cabecalho titulo={props.titulo} icone={props.icone} />
+                    <Conteudo>
+                        {props.children}
+                    </Conteudo>
+                </div>
+            </div>
+        </ForcarAutenticacao>
+    )
+}
