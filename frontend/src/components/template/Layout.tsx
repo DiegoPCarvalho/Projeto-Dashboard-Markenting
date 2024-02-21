@@ -15,10 +15,10 @@ export default function Layout(props: LayoutProps) {
     return (
         <ForcarAutenticacao>
             <div className={` ${tema}
-            flex h-screen w-screen
+            flex h-screen w-screen  
         `}>
                 <MenuLateral />
-                <div className={`flex flex-col w-full bg-gray-300 dark:bg-gray-600`}>
+                <div className={`flex flex-col w-full bg-gray-200 dark:bg-gray-600`}>
                     <Cabecalho titulo={props.titulo} icone={props.icone} />
                     <Conteudo>
                         {props.children}

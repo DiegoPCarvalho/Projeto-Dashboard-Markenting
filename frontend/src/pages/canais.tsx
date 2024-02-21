@@ -7,9 +7,7 @@ export default function Home() {
       
     `}>
       <Layout titulo="Pagina de Resultado Canais | Zhaz" icone={IconeCanais}>
-        <div>
-          conteudo!!!
-        </div>
+        teste
       </Layout>
     </div>
   )

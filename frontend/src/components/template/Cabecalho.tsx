@@ -12,7 +12,7 @@ export default function Cabecalho(props: CabecalhoProps) {
     const {tema, alternarTema} = useAppData()
 
     return (
-        <div className={`flex bg-gray-100 p-2 shadow-black dark:bg-gray-800`}>
+        <div className={`flex bg-gray-100 p-2 box-border shadow-lg dark:bg-gray-800`}>
             <div className="mr-3 dark:text-gray-200">
                 {props.icone}
             </div>

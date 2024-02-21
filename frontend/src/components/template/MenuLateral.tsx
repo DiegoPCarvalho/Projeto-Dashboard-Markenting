@@ -8,6 +8,7 @@ export default function MenuLateral() {
     const {logout} = useAuth()
     return (
         <aside className={`
+        box-border shadow-lg
             flex flex-col
             bg-cyan-700
             dark:bg-gray-900 
@@ -29,7 +30,7 @@ export default function MenuLateral() {
                 className={`
                 dark:text-red-700 dark:bg-gray-900
                 text-gray-300 bg-red-600
-                hover:bg-gray-300 hover:text-red-700
+                hover:bg-red-500 hover:text-white
                 dark:hover:text-gray-200 dark:hover:bg-red-500
                 `}
                 />
