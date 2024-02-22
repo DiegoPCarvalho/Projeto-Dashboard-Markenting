@@ -69,7 +69,7 @@ export default function GraficoGNC(props: GraficoProps){
                     enabled: true,
                     format: props.texto,
                     style: {
-                        color: (HighCharts.theme) || 'black'
+                        color: (HighCharts.theme) || tema === 'dark' ? 'white' : 'black'
                     }
                 },
                 showInLegend: true
@@ -79,25 +79,54 @@ export default function GraficoGNC(props: GraficoProps){
                     enabled: true,
                     format: props.texto,
                     style: {
-                        color: (HighCharts.theme) || 'black'
+                        color: (HighCharts.theme) || tema === 'dark' ? 'white' : 'black'
                     }
                 },
             },
             bar: {
+                cursor: 'pointer',
                 dataLabels: {
                     enabled: true,
                     format: props.texto,
                     style: {
-                        color: (HighCharts.theme) || 'black'
+                        color: (HighCharts.theme) || tema === 'dark' ? 'white' : 'black'
                     }
                 }
             },
             spline: {
+                cursor: 'pointer',
                 dataLabels: {
                     enabled: true,
                     format: props.texto,
                     style: {
-                        color: (HighCharts.theme) || 'black'
+                        color: (HighCharts.theme) || tema === 'dark' ? 'white' : 'black'
+                    }
+                }
+            },
+            line: {
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: props.texto,
+                    style: {
+                        color: (HighCharts.theme) || tema === 'dark' ? 'white' : 'black'
+                    }
+                }
+            },
+            area: {
+                cursor: 'pointer',
+                stacking: 'normal',
+                lineColor: tema === 'dark' ? '#fff' : '#000',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: tema === 'dark' ? '<p style="color:#fff">{point.name}R${point.y:1f}</p>' : props.texto,
+                    style: {
+                        color: (HighCharts.theme) || tema === 'dark' ? 'white' : 'black'
                     }
                 }
             }
