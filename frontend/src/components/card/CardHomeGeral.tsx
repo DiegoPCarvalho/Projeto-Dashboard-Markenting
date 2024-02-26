@@ -1,6 +1,7 @@
 interface CardHomeGeral {
     titulo?: string
     valor?: string
+    className?:string
 }
 
 export default function CardHomeGeral(props: CardHomeGeral) {
@@ -9,8 +10,7 @@ export default function CardHomeGeral(props: CardHomeGeral) {
              flex flex-col justify-center items-center
              bg-white h-32 w-full text-white
              rounded-lg box-border shadow-lg
-             bg-gradient-to-tr from-teal-500 from-25% to-85% to-teal-900
-             dark:bg-gradient-to-tr dark:from-orange-600 dark:from-25% dark:to-85% dark:to-orange-900
+             ${props.className}
             `}>
             <div className={`
                 sm:${(props.titulo === 'Faturamento' ? 'text-md':'text-2xl')} 

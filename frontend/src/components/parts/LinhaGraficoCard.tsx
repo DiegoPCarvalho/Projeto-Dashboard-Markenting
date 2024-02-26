@@ -51,16 +51,46 @@ export default function LinhaGraficoTabela() {
              <div className="grid gap-2 mt-2">
                 <div className="grid grid-rows-1">
                     <div className="grid grid-cols-3 gap-2">
-                        <CardHomeGeral titulo="CPL" valor="R$58,33"/>
-                        <CardHomeGeral titulo="Faturamento" valor="R$2,44 MI"/>
-                        <CardHomeGeral titulo="Roas" valor="19"/>
+                        <CardHomeGeral titulo="CPL" valor="R$58,33"
+                         className={`
+                         bg-gradient-to-tr from-teal-500 from-25% to-85% to-teal-800
+                         dark:bg-gradient-to-tr dark:from-red-500 dark:from-25% dark:to-85% dark:to-orange-900
+                         `}
+                        />
+                        <CardHomeGeral titulo="Faturamento" valor="R$2,44 MI"
+                            className={`
+                            bg-gradient-to-tr from-teal-500 from-25% to-85% to-teal-800
+                            dark:bg-gradient-to-tr dark:from-red-500 dark:from-25% dark:to-85% dark:to-orange-900
+                            `}
+                        />
+                        <CardHomeGeral titulo="Roas" valor="19"
+                            className={`
+                            bg-gradient-to-tr from-teal-500 from-25% to-85% to-teal-800
+                            dark:bg-gradient-to-tr dark:from-red-500 dark:from-25% dark:to-85% dark:to-orange-900
+                            `}
+                        />
                     </div>
                 </div>    
                 <div className="grid grid-rows-1">
                 <div className="grid grid-cols-3 gap-2">
-                        <CardHomeGeral titulo="CPV" valor="R$314,10"/>
-                        <CardHomeGeral titulo="Custo" valor="R$130.665,33"/>
-                        <CardHomeGeral titulo="CTR" valor="0.87%"/>
+                        <CardHomeGeral titulo="CPV" valor="R$314,10"
+                            className={`
+                            bg-gradient-to-tr from-teal-500 from-25% to-85% to-teal-800
+                            dark:bg-gradient-to-tr dark:from-red-500 dark:from-25% dark:to-85% dark:to-orange-900
+                            `}
+                        />
+                        <CardHomeGeral titulo="Custo" valor="R$130.665,33"
+                            className={`
+                            bg-gradient-to-tr from-teal-500 from-25% to-85% to-teal-800
+                            dark:bg-gradient-to-tr dark:from-red-500 dark:from-25% dark:to-85% dark:to-orange-900
+                            `}
+                        />
+                        <CardHomeGeral titulo="CTR" valor="0.87%"
+                            className={`
+                            bg-gradient-to-tr from-teal-500 from-25% to-85% to-teal-800
+                            dark:bg-gradient-to-tr dark:from-red-500 dark:from-25% dark:to-85% dark:to-orange-900
+                            `}
+                        />
                     </div>
                 </div>                       
             </div>
